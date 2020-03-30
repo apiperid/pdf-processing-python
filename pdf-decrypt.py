@@ -3,6 +3,7 @@
 from PyPDF2 import PdfFileReader, PdfFileWriter
 import sys
 import os
+import time
 
 if __name__=="__main__":
 	if(len(sys.argv)!=3):
@@ -15,7 +16,7 @@ if __name__=="__main__":
 		print("The file you want to decrypt is not .pdf")
 		sys.exit()
 
-	output_filename = os.path.splitext(sys.argv[1])[0]+"_decrypted.pdf"
+	output_filename = os.path.splitext(sys.argv[1])[0]+"_decrypted_"+str(int(round(time.time() * 1000)))+".pdf"
 	#print(output_filename)
 	try:
 		with open(sys.argv[1], "rb") as in_file:
