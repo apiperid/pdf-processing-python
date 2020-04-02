@@ -34,25 +34,41 @@ Turns many .pdf files into one
 
 #### Arguments
 * argv[0] : pdf-merge.py
-* argv[1] ... argv[N] : .pdf files to be used at the merge procedure
+* argv[1] ... argv[N] : .pdf files to be used at the merge procedure (decrypted)
 
 #### Output
 .pdf file which contains all the .pdf inserted saved at the path of the first
 
 ## pdf-split.py
+Splits a .pdf file from page.X to page.Y where X,Y are page numbers user gives
 
 #### Arguments
+* argv[0] : pdf-split.py
+* argv[1] : .pdf file to be split (decrypted)
+* argv[2] : from which page to start
+* argv[3] : to which page it will stop
 
 #### Output
+New .pdf file which contains only the pages in range [page.X,page.Y]
 
 ## pdf-to-images.py
+Turn a .pdf file into mutilple .jpg images (each page a single .jpg file)
 
 #### Arguments
+* argv[0] : pdf-to-images.py
+* argv[1] : .pdf file to turn into images (decrypted)
+* argv[2] : dpi of image (bigger dpi means better resolution and bigger size)
 
 #### Output
+New folder which contains each .pdf page as image
 
 ## pdf-crack.py
+Tries passwords given from a .txt file to find the password of an encrypted .pdf 
 
 #### Arguments
+* argv[0] : pdf-crack.py
+* argv[1] : .pdf to be cracked (encrypted)
+* argv[2] : the .txt containing the possible passwords
 
 #### Output
+In which password we had success (or no success)
