@@ -18,9 +18,9 @@ if __name__ == "__main__":
 		print("3rd Argument : dpi")
 		sys.exit()
 	try:
-		assert(sys.argv[1].endswith(".pdf") and os.path.exists(sys.argv[1]))
+		assert(sys.argv[1].endswith(".pdf") and os.path.exists(sys.argv[1]) and not(PdfFileReader(open(sys.argv[1], 'rb')).isEncrypted))
 	except AssertionError:
-		print("2nd Argument (file) must exist and be .pdf")
+		print("2nd Argument (file) must exist and be .pdf and must not be encrypted")
 		sys.exit()
 
 	initial_file_size = os.path.getsize(sys.argv[1])

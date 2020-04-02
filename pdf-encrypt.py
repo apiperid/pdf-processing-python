@@ -29,7 +29,7 @@ if __name__=="__main__":
 			output_pdf.encrypt(sys.argv[2])
 			with open(output_filename, "wb") as out_file:
 				output_pdf.write(out_file)
-		print("Program Finished, the encrypted file has been created")
+		print(f"Program Finished, the encrypted file has been created at : {output_filename}")
 	except:
 		print("An Error Occured . Possible reasons :")
 		print("a) The file you inserted does not exist")

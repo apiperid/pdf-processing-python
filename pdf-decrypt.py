@@ -33,6 +33,6 @@ if __name__=="__main__":
 	except:
 		print("An Error Occured . Possible reasons :")
 		print("a) The file you inserted does not exist")
-		print("b) Error occured while encrypting")
+		print("b) Error occured while encrypting (password not correct)")
 		print("c) Error occured while writing to new file")
 		print("d) The .pdf file is already decrypted")
