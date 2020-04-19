@@ -1,4 +1,5 @@
 from pdf2image import convert_from_path
+from PyPDF2 import PdfFileReader, PdfFileWriter
 import os
 import time
 import sys
