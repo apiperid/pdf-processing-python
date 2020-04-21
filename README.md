@@ -3,12 +3,16 @@ In this repository i provide python scripts which help the processing of a pdf f
 It is kwown that all the above can be done using software (e.g PDFSamBasic) or online tools , but with these .py files there is no need for extra software or upload to internet (which can be dangerous if it is about personal data).
 
 # Essential setups
-You must only install PyPDF2  and pdf2image by :<br>
-`pip install PyPDF2`<br>
-`pip install pdf2image`
+You must install first packages : img2pdf,natsort,pdf2image,Pillow,PyPDF2<br>
+`pip install img2pdf`<br>
+`pip install natsort`<br>
+`pip install pdf2image`<br>
+`pip install Pillow`<br>
+`pip install PyPDF2`
 
 ## pdf-encrypt.py
-This .py script gets a non-protected pdf file and encrypt it with a password user gives
+This .py script gets a non-protected pdf file and encrypt it with a password user gives<br>
+`python argv[0] argv[1] argv[2]`
 
 #### Arguments
 * argv[0] : pdf-encrypt.py
@@ -19,7 +23,8 @@ This .py script gets a non-protected pdf file and encrypt it with a password use
 A new .pdf file (encrypted) at the same folder as the decrypted
 
 ## pdf-decrypt.py
-Decrypt an already encrypted .pdf file
+Decrypt an already encrypted .pdf file<br>
+`python argv[0] argv[1] argv[2]`
 
 #### Arguments
 * argv[0] : pdf-decrypt.py
@@ -30,7 +35,8 @@ Decrypt an already encrypted .pdf file
 A new .pdf file (decrypted) at the same folder as the encrypted
 
 ## pdf-merge.py
-Turns many .pdf files into one
+Turns many .pdf files into one<br>
+`python argv[0] argv[1]...argv[N]`
 
 #### Arguments
 * argv[0] : pdf-merge.py
@@ -40,7 +46,8 @@ Turns many .pdf files into one
 .pdf file which contains all the .pdf inserted saved at the path of the first
 
 ## pdf-split.py
-Splits a .pdf file from page.X to page.Y where X,Y are page numbers user gives
+Splits a .pdf file from page.X to page.Y where X,Y are page numbers user gives<br>
+`python argv[0] argv[1] argv[2] argv[3]`
 
 #### Arguments
 * argv[0] : pdf-split.py
@@ -52,7 +59,8 @@ Splits a .pdf file from page.X to page.Y where X,Y are page numbers user gives
 New .pdf file which contains only the pages in range [page.X,page.Y]
 
 ## pdf-to-images.py
-Turn a .pdf file into mutilple .jpg images (each page a single .jpg file)
+Turn a .pdf file into mutilple .jpg images (each page a single .jpg file)<br>
+`python argv[0] argv[1] argv[2]`
 
 #### Arguments
 * argv[0] : pdf-to-images.py
@@ -63,7 +71,8 @@ Turn a .pdf file into mutilple .jpg images (each page a single .jpg file)
 New folder which contains each .pdf page as image
 
 ## pdf-crack.py
-Tries passwords given from a .txt file to find the password of an encrypted .pdf 
+Tries passwords given from a .txt file to find the password of an encrypted .pdf<br>
+`python argv[0] argv[1] argv[2]`
 
 #### Arguments
 * argv[0] : pdf-crack.py
