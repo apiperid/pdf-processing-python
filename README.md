@@ -1,5 +1,5 @@
 # pdf-processing-python
-In this repository i provide python scripts which help the processing of a pdf file.To be more specific you the scripts are about pdf encryption,decryption,merging,splitting,turning every pdf file (every page) into images (this is about to save disk space if you want) and a program to crack the password of a protected pdf file.
+In this repository i provide python scripts which help the processing of a pdf file.To be more specific you the scripts are about pdf encryption,decryption,merging,splitting,turning every pdf file (every page) into images (this is about to save disk space if you want),turning multiple images into one pdf and a program to crack the password of a protected pdf file.
 It is kwown that all the above can be done using software (e.g PDFSamBasic) or online tools , but with these .py files there is no need for extra software or upload to internet (which can be dangerous if it is about personal data).
 
 # Essential setups
