@@ -81,3 +81,14 @@ Tries passwords given from a .txt file to find the password of an encrypted .pdf
 
 #### Output
 In which password we had success (or no success)
+
+## images-to-pdf.py
+Takes all photos (.jpg,jpeg,.jfif,.png) of a folder(not from its subfolders) and creates a pdf from them<br>
+`python argv[0] argv[1]`
+
+#### Arguments
+* argv[0] : images-to-pdf.py
+* argv[1] : folder in where the images are stored
+
+#### Output
+.pdf file which contains all the images of the folder.The pdf is stored to the folder given
